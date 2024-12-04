@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <title>Calculator with Demon</title>
+   <style>
+       body {
+           font-family: Arial, sans-serif;
+           background: linear-gradient(135deg, #2d3436, #d63031);
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           margin: 0;
+           color: #ffffff;
+       }
+       .calculator-container {
+           background: #2d3436;
+           border-radius: 15px;
+           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+           padding: 30px;
+           text-align: center;
+           width: 300px;
+           position: relative;
+       }
+       .calculator-container img {
+           width: 100px;
+           position: absolute;
+           top: -60px;
+           left: calc(50% - 50px);
+           border-radius: 50%;
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+       }
+       h1 {
+           font-size: 24px;
+           margin-bottom: 20px;
+           color: #d63031;
+       }
+       input[type="text"] {
+           width: 100%;
+           padding: 10px;
+           margin: 10px 0;
+           border: 1px solid #dcdde1;
+           border-radius: 5px;
+           font-size: 16px;
+           background: #636e72;
+           color: #ffffff;
+       }
+       button {
+           background: #d63031;
+           border: none;
+           padding: 10px 20px;
+           border-radius: 5px;
+           font-size: 16px;
+           color: #ffffff;
+           cursor: pointer;
+           transition: background 0.3s;
+       }
+       button:hover {
+           background: #e17055;
+       }
+   </style>
+</head>
+<body>
+   <div class="calculator-container">
+       <img src="https://via.placeholder.com/100?text=Demon" alt="Demon">
+       <h1>BMI Calculator</h1>
+       <form action="/bmiCalculator" method="post">
+           <input type="text" name="height" placeholder="Enter the height">
+           <input type="text" name="weight" placeholder="Enter the weight">
+           <button type="submit" name="submit">Calculate</button>
+       </form>
+   </div>
+</body>
+</html>
